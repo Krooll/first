@@ -1,0 +1,15 @@
+@import '../../styles/settings.scss';
+
+.cardForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.cardInput {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
