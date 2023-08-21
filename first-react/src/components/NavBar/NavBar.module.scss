@@ -1,0 +1,39 @@
+@import '../../styles/settings.scss';
+
+.nav {
+    height: 65px;
+    width: auto;
+    background-color: darken($color-dark, 3%);
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: $color-light;
+}
+
+.navButton {
+    font-size: 24px;
+    margin: 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.linkButton {
+    color: $color-light;
+}
+
+.navList {
+    display: inline-block;
+    margin: 22px 10px;
+}
+
+.link {
+    margin: 10px 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: $color-light;
+}
