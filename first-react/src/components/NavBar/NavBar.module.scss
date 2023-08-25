@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
-    color: $color-light;
 }
 
 .navButton {
@@ -26,14 +25,22 @@
 }
 
 .navList {
-    display: inline-block;
-    margin: 22px 10px;
+    margin: 22px;
+
+    li {
+        display: inline;
+        margin: 10px 10px;
+        font-size: 1rem;
+        font-weight: bolder;
+
+        a {
+            color: $color-light;
+            text-decoration: none;
+        }
+        
+        .linkActive {
+            color: $color-warning;
+        }
+    }
 }
 
-.link {
-    margin: 10px 10px;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bolder;
-    color: $color-light;
-}
