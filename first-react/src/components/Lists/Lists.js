@@ -14,7 +14,7 @@ const Lists = () => {
                 <h3>{list.title}</h3>
                 <p>{list.description}</p>   
             </Link>
-        ))};
+        ))}
         <ListForm />
     </section>
     );  

@@ -1,11 +1,20 @@
 import PageTitle from '../PageTitle/PageTitle';
 import styles from './Favorite.module.scss';
+import { useSelector } from 'react-redux';
+import { getFavorite } from '../../redux/store';
+import Card from '../Card/Card';
 
 const Favorite = () => {
+  const lists = useSelector(getFavorite);
+  console.log('favoriteList', lists);
     return (
-        <div className={styles.hero}>
+      <div className={styles.hero}>
         <PageTitle>FAVORITE</PageTitle>
-        <p className={styles.subtitle}>A simple to-do app, with lists, columns and card</p>
+        <div className={styles.favoriteList}>
+          <ul className={styles.favColumn}>
+            {lists.map(list => <Card key={list.id} isFavorite={list.isFavorite}>{list.title}</Card>)}
+          </ul>
+        </div>
       </div>
     );
 };
