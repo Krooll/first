@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch } from 'react-redux';
 import Button from "../Button/Button";
 import styles from './ColumnForm.module.scss';
-import { addColumn } from "../../redux/store";
+import { addColumn } from "../../redux/columnRedux";
 import { useParams } from "react-router-dom";
 
 const ColumnForm = () => {

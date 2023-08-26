@@ -1,12 +1,11 @@
 import PageTitle from '../PageTitle/PageTitle';
 import styles from './Favorite.module.scss';
 import { useSelector } from 'react-redux';
-import { getFavorite } from '../../redux/store';
+import { getFavorite } from '../../redux/cardRedux';
 import Card from '../Card/Card';
 
 const Favorite = () => {
   const lists = useSelector(getFavorite);
-  console.log('favoriteList', lists);
     return (
       <div className={styles.hero}>
         <PageTitle>FAVORITE</PageTitle>

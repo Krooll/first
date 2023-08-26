@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 import styles from './CardForm.module.scss';
 import TextInput from '../TextInput/TextInput';
 import { useDispatch } from 'react-redux';
-import { addCard } from '../../redux/store';
+import { addCard } from '../../redux/cardRedux';
 
 const CardForm = ({columnId}) => {
     const dispatch= useDispatch(addCard);
